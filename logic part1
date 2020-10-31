@@ -1,0 +1,10 @@
+print("WELCOME TO WAR GAME")
+player_one=Player('one')
+player_two=Player("two")
+
+new_deck=Deck()
+new_deck.shuffle()
+
+for x in range(0,26):
+    player_one.add_cards(new_deck.deal_one())
+    player_two.add_cards(new_deck.deal_one())
